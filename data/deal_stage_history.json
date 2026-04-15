@@ -1,0 +1,3985 @@
+{
+  "111259": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "111272": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111278": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111282": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111286": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Opportunity",
+      "Negotiation",
+      "Less $100 Trial",
+      "Opportunity",
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111290": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111299": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111302": {
+    "pre_ae_stage": "Trial Completed",
+    "is_trial": true,
+    "stages": [
+      "Trial Completed",
+      "Less $100 Trial",
+      "Qualified",
+      "Trial Completed",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "111304": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "111310": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111408": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "111410": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111411": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111428": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "111431": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "111450": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111464": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111465": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Opportunity",
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "111466": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111483": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "111484": {
+    "pre_ae_stage": "Trial Completed",
+    "is_trial": true,
+    "stages": [
+      "Trial Completed",
+      "Opportunity with Trial",
+      "Opportunity with Trial",
+      "Trial Completed",
+      "Trial Completed",
+      "Opportunity with Trial",
+      "Opportunity with Trial",
+      "Trial Completed",
+      "Opportunity",
+      "Opportunity with Trial",
+      "Opportunity with Trial",
+      "Opportunity",
+      "Opportunity",
+      "Opportunity with Trial",
+      "Opportunity with Trial",
+      "Opportunity"
+    ]
+  },
+  "111491": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "111498": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Opportunity",
+      "Qualified demo requests",
+      "Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111502": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112255": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "No Show",
+      "Meeting Scheduled",
+      "Meeting Scheduled",
+      "No Show",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112266": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "In Trial",
+      "Meeting Scheduled"
+    ]
+  },
+  "112289": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112291": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Opportunity",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Opportunity",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112295": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112297": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112298": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112300": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112301": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "112326": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": [
+      "Opportunity",
+      "Discovery",
+      "Discovery",
+      "Opportunity"
+    ]
+  },
+  "112327": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "112328": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": [
+      "Opportunity",
+      "Discovery",
+      "Discovery",
+      "Opportunity"
+    ]
+  },
+  "112331": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "112345": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112347": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112348": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112358": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112360": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "112366": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112403": {
+    "pre_ae_stage": "Trial Completed",
+    "is_trial": true,
+    "stages": [
+      "Trial Completed",
+      "Opportunity with Trial",
+      "Opportunity with Trial",
+      "Trial Completed",
+      "Opportunity",
+      "Opportunity with Trial",
+      "Discovery",
+      "Opportunity"
+    ]
+  },
+  "112412": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112417": {
+    "pre_ae_stage": "No Show",
+    "is_trial": false,
+    "stages": [
+      "No Show",
+      "Discovery",
+      "Meeting Scheduled",
+      "No Show",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112418": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112422": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112436": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112439": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112440": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Discovery",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112444": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112456": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "112466": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112475": {
+    "pre_ae_stage": "No Show",
+    "is_trial": false,
+    "stages": [
+      "Opportunity",
+      "Discovery",
+      "Discovery",
+      "Opportunity",
+      "Opportunity",
+      "Discovery",
+      "Discovery",
+      "Opportunity",
+      "No Show",
+      "Discovery",
+      "Meeting Scheduled",
+      "No Show",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112476": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112479": {
+    "pre_ae_stage": "No Show",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "No Show",
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112480": {
+    "pre_ae_stage": "Awaiting Feature",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Awaiting Feature"
+    ]
+  },
+  "112484": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112486": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112493": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112495": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Discovery"
+    ]
+  },
+  "112498": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Discovery",
+      "Meeting Scheduled"
+    ]
+  },
+  "112503": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "112519": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Discovery",
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112535": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112546": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112561": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112574": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112581": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112582": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112588": {
+    "pre_ae_stage": "No Show",
+    "is_trial": false,
+    "stages": [
+      "No Show",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "No Show",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112598": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Opportunity with Trial",
+      "Opportunity",
+      "Opportunity",
+      "Opportunity with Trial",
+      "Qualified demo requests",
+      "Opportunity",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112626": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112627": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112628": {
+    "pre_ae_stage": "Trial Completed",
+    "is_trial": true,
+    "stages": [
+      "Trial Completed",
+      "Less $100 Trial",
+      "Qualified",
+      "Trial Completed",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "112661": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery"
+    ]
+  },
+  "112663": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112664": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "112679": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112681": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112687": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Opportunity with Trial",
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112696": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112713": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112743": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112748": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112779": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112784": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112787": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112804": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "In Trial",
+      "Meeting Scheduled"
+    ]
+  },
+  "112813": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112823": {
+    "pre_ae_stage": "Trial Completed",
+    "is_trial": true,
+    "stages": [
+      "Trial Completed",
+      "Negotiation",
+      "Opportunity with Trial",
+      "Trial Completed",
+      "Opportunity",
+      "Opportunity with Trial",
+      "Meeting Scheduled",
+      "Opportunity",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112837": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112845": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Opportunity with Trial",
+      "Negotiation",
+      "Less $100 Trial",
+      "Opportunity with Trial",
+      "Discovery",
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Discovery",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112846": {
+    "pre_ae_stage": "Trial Completed",
+    "is_trial": true,
+    "stages": [
+      "Trial Completed",
+      "Opportunity with Trial",
+      "Opportunity with Trial",
+      "Trial Completed",
+      "Trial Completed",
+      "Opportunity with Trial",
+      "Opportunity with Trial",
+      "Trial Completed",
+      "Opportunity",
+      "Opportunity with Trial",
+      "Meeting Scheduled",
+      "Opportunity",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112851": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112877": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112900": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Opportunity with Trial",
+      "Less $100 Discovery",
+      "Discovery",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112902": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Opportunity",
+      "Opportunity with Trial",
+      "Discovery",
+      "Opportunity",
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112909": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112915": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Opportunity",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "112920": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery"
+    ]
+  },
+  "112936": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112940": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112958": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "112995": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery"
+    ]
+  },
+  "113008": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113022": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113029": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113050": {
+    "pre_ae_stage": "Trial Completed",
+    "is_trial": true,
+    "stages": [
+      "Opportunity with Trial",
+      "Trial Completed",
+      "Discovery",
+      "Opportunity with Trial"
+    ]
+  },
+  "113051": {
+    "pre_ae_stage": "Qualified",
+    "is_trial": true,
+    "stages": [
+      "Less $100 Trial",
+      "Negotiation",
+      "Qualified",
+      "Less $100 Trial",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "113062": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Opportunity",
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113063": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113064": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113081": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113084": {
+    "pre_ae_stage": "Qualified",
+    "is_trial": true,
+    "stages": [
+      "Qualified",
+      "Less $100 Trial",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "113087": {
+    "pre_ae_stage": "Requested",
+    "is_trial": false,
+    "stages": [
+      "Requested",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113099": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113113": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113114": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113115": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113134": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113140": {
+    "pre_ae_stage": "Trial Completed",
+    "is_trial": true,
+    "stages": [
+      "Trial Completed",
+      "Less $100 Discovery",
+      "Qualified",
+      "Trial Completed",
+      "MQL Qualified",
+      "Qualified",
+      "In Trial",
+      "MQL Qualified"
+    ]
+  },
+  "113143": {
+    "pre_ae_stage": "Requested",
+    "is_trial": false,
+    "stages": [
+      "Requested",
+      "No Show"
+    ]
+  },
+  "113150": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113151": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113152": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113154": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113165": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113181": {
+    "pre_ae_stage": "Qualified",
+    "is_trial": true,
+    "stages": [
+      "Qualified",
+      "Less $100 Trial",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "113225": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113233": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Opportunity",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113245": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113246": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113252": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113291": {
+    "pre_ae_stage": "No Show",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "No Show",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113294": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Discovery",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113295": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "In Trial",
+      "Meeting Scheduled"
+    ]
+  },
+  "113303": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113315": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113325": {
+    "pre_ae_stage": "Requested",
+    "is_trial": false,
+    "stages": [
+      "Requested",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113329": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113337": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113344": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113349": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113353": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113365": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Opportunity",
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113379": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113396": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Negotiation",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113406": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": [
+      "Discovery",
+      "Opportunity",
+      "Opportunity",
+      "Discovery"
+    ]
+  },
+  "113411": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "113413": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113431": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113434": {
+    "pre_ae_stage": "Unidentified",
+    "is_trial": false,
+    "stages": [
+      "Unidentified",
+      "Less $100 Trial",
+      "Opportunity with Trial",
+      "Unidentified",
+      "Qualified demo requests",
+      "Opportunity with Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113436": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Opportunity",
+      "Opportunity with Trial",
+      "Meeting Scheduled",
+      "Opportunity",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113442": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified",
+      "Meeting Scheduled",
+      "Unidentified",
+      "Qualified",
+      "Meeting Scheduled",
+      "Unidentified",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113457": {
+    "pre_ae_stage": "Trial Completed",
+    "is_trial": true,
+    "stages": [
+      "Trial Completed",
+      "Less $100 Trial",
+      "Qualified",
+      "Trial Completed",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "113471": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "113478": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113493": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Opportunity with Trial",
+      "Less $100 Trial",
+      "Discovery",
+      "Meeting Scheduled",
+      "Less $100 Trial"
+    ]
+  },
+  "113494": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery"
+    ]
+  },
+  "113499": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113501": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113543": {
+    "pre_ae_stage": "Awaiting Feature",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Awaiting Feature",
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113548": {
+    "pre_ae_stage": "No Show",
+    "is_trial": false,
+    "stages": [
+      "No Show",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "No Show",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113554": {
+    "pre_ae_stage": "Trial Completed",
+    "is_trial": true,
+    "stages": [
+      "Trial Completed",
+      "Negotiation",
+      "Opportunity with Trial",
+      "Trial Completed",
+      "Discovery",
+      "Opportunity with Trial",
+      "Opportunity",
+      "Discovery",
+      "Discovery",
+      "Opportunity",
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113603": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": [
+      "Negotiation",
+      "Opportunity with Trial"
+    ]
+  },
+  "113606": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Discovery",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113614": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113622": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery"
+    ]
+  },
+  "113625": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Opportunity",
+      "Opportunity with Trial",
+      "Meeting Scheduled",
+      "Opportunity",
+      "Scheduling ",
+      "Meeting Scheduled",
+      "Meeting Scheduled",
+      "Scheduling "
+    ]
+  },
+  "113626": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Opportunity"
+    ]
+  },
+  "113636": {
+    "pre_ae_stage": "Qualified",
+    "is_trial": true,
+    "stages": [
+      "Qualified",
+      "Less $100 Trial",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "113661": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Opportunity"
+    ]
+  },
+  "113672": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113673": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113674": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113714": {
+    "pre_ae_stage": "Qualified",
+    "is_trial": true,
+    "stages": [
+      "Qualified",
+      "Less $100 Trial",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "113718": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113739": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "113753": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Discovery",
+      "Meeting Scheduled",
+      "Less $100 Discovery"
+    ]
+  },
+  "113754": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Opportunity"
+    ]
+  },
+  "113755": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Discovery",
+      "Meeting Scheduled",
+      "Less $100 Trial"
+    ]
+  },
+  "113760": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Discovery",
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113776": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Discovery",
+      "Meeting Scheduled",
+      "Less $100 Discovery"
+    ]
+  },
+  "113777": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery"
+    ]
+  },
+  "113778": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery"
+    ]
+  },
+  "113782": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Opportunity",
+      "Opportunity with Trial",
+      "Qualified demo requests",
+      "Opportunity",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113785": {
+    "pre_ae_stage": "Qualified",
+    "is_trial": true,
+    "stages": [
+      "Less $100 Trial",
+      "Opportunity with Trial",
+      "Qualified",
+      "Less $100 Trial",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "113831": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Opportunity with Trial",
+      "Meeting Scheduled",
+      "Discovery"
+    ]
+  },
+  "113840": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests",
+      "In Trial",
+      "Requested",
+      "Unidentified",
+      "In Trial",
+      "In Trial",
+      "Unidentified",
+      "Unidentified",
+      "In Trial",
+      "In Trial",
+      "Unidentified",
+      "Unidentified",
+      "In Trial",
+      "Requested",
+      "Unidentified"
+    ]
+  },
+  "113843": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Discovery",
+      "Requested",
+      "Qualified demo requests",
+      "Unidentified",
+      "Requested",
+      "Requested",
+      "Unidentified"
+    ]
+  },
+  "113844": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "113854": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113881": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Negotiation",
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113882": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "113892": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113902": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "113907": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113917": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113922": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery"
+    ]
+  },
+  "113963": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Opportunity",
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "113985": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "114013": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "114014": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "114015": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "114019": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "114047": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "114053": {
+    "pre_ae_stage": "MQL Qualified",
+    "is_trial": true,
+    "stages": [
+      "Discovery",
+      "Opportunity with Trial",
+      "MQL Qualified",
+      "Discovery",
+      "In Trial",
+      "MQL Qualified"
+    ]
+  },
+  "109980": {
+    "pre_ae_stage": "Qualified",
+    "is_trial": true,
+    "stages": [
+      "Qualified",
+      "Trial Completed",
+      "MQL Qualified",
+      "Qualified",
+      "In Trial",
+      "MQL Qualified"
+    ]
+  },
+  "110000": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110010": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110011": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110038": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110042": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "110043": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial"
+    ]
+  },
+  "110052": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110065": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110073": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110074": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110083": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "In Trial",
+      "Meeting Scheduled"
+    ]
+  },
+  "110101": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110113": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110115": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Discovery",
+      "Less $100 Discovery",
+      "Discovery",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110120": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110123": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110130": {
+    "pre_ae_stage": "Delayed after Trial",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Delayed after Trial",
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Trial Completed",
+      "Less $100 Trial",
+      "Qualified",
+      "Trial Completed",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "110131": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110144": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Opportunity",
+      "Opportunity with Trial",
+      "Qualified demo requests",
+      "Opportunity",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110153": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110163": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Opportunity",
+      "Negotiation",
+      "Meeting Scheduled",
+      "Opportunity",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110165": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "In Trial",
+      "Meeting Scheduled"
+    ]
+  },
+  "110170": {
+    "pre_ae_stage": "MQL Trial Ended",
+    "is_trial": true,
+    "stages": [
+      "MQL Trial Ended",
+      "Less $100 Trial",
+      "MQL Qualified",
+      "MQL Trial Ended",
+      "In Trial",
+      "MQL Qualified"
+    ]
+  },
+  "110181": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110190": {
+    "pre_ae_stage": "No Show",
+    "is_trial": false,
+    "stages": [
+      "No Show",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "No Show",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110202": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Opportunity",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Opportunity",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110209": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110215": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110217": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110230": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110233": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110235": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Discovery",
+      "Less $100 Discovery",
+      "Discovery",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110241": {
+    "pre_ae_stage": "Trial Completed",
+    "is_trial": true,
+    "stages": [
+      "Opportunity with Trial",
+      "Trial Completed",
+      "Opportunity",
+      "Opportunity with Trial",
+      "Discovery",
+      "Opportunity",
+      "Meeting Scheduled",
+      "Discovery",
+      "In Trial",
+      "Meeting Scheduled"
+    ]
+  },
+  "110248": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110254": {
+    "pre_ae_stage": "Unidentified",
+    "is_trial": false,
+    "stages": [
+      "Unidentified",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Unidentified",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110268": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery"
+    ]
+  },
+  "110280": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110284": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110287": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110291": {
+    "pre_ae_stage": "Qualified",
+    "is_trial": true,
+    "stages": [
+      "Discovery",
+      "Less $100 Discovery",
+      "Qualified",
+      "Discovery",
+      "Meeting Scheduled",
+      "Qualified",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110292": {
+    "pre_ae_stage": "No Show",
+    "is_trial": false,
+    "stages": [
+      "No Show",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "No Show",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110293": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "No Show",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110299": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110306": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "In Trial",
+      "Meeting Scheduled"
+    ]
+  },
+  "110325": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110342": {
+    "pre_ae_stage": "MQL Qualified",
+    "is_trial": true,
+    "stages": [
+      "Discovery",
+      "Less $100 Trial",
+      "MQL Qualified",
+      "Discovery",
+      "Qualified",
+      "MQL Qualified",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "110347": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110354": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110365": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110381": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110391": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Discovery",
+      "Less $100 Discovery",
+      "Discovery",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110422": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Opportunity",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110429": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110446": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110448": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110467": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110476": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110486": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110490": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110514": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110522": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Opportunity with Trial",
+      "Opportunity",
+      "Opportunity",
+      "Opportunity with Trial",
+      "Meeting Scheduled",
+      "Opportunity",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110524": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110526": {
+    "pre_ae_stage": "Qualified",
+    "is_trial": true,
+    "stages": [
+      "Qualified",
+      "Less $100 Trial",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "110550": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110560": {
+    "pre_ae_stage": "Qualified",
+    "is_trial": true,
+    "stages": [
+      "Qualified",
+      "Less $100 Trial",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "110567": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110607": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110608": {
+    "pre_ae_stage": "Qualified",
+    "is_trial": true,
+    "stages": [
+      "Qualified",
+      "Less $100 Trial",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "110623": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Opportunity with Trial",
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110641": {
+    "pre_ae_stage": "No Show",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "No Show",
+      "Less $100 Discovery",
+      "Discovery"
+    ]
+  },
+  "110642": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "110644": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "110645": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110649": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110665": {
+    "pre_ae_stage": "Requested",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Discovery",
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Requested",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Requested",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110669": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "110671": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": [
+      "Less $100 Trial",
+      "Less $100 Discovery"
+    ]
+  },
+  "110672": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110710": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Discovery",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110714": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Discovery",
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Discovery",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110728": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "110734": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Discovery",
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Discovery",
+      "Less $100 Trial",
+      "Less $100 Trial",
+      "Discovery",
+      "Discovery",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110739": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "110754": {
+    "pre_ae_stage": "Qualified",
+    "is_trial": true,
+    "stages": [
+      "Qualified",
+      "Less $100 Trial",
+      "In Trial",
+      "Qualified",
+      "Meeting Scheduled",
+      "In Trial",
+      "Qualified",
+      "Meeting Scheduled",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "110756": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110767": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110781": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110794": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110805": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110822": {
+    "pre_ae_stage": "Trial Completed",
+    "is_trial": true,
+    "stages": [
+      "Trial Completed",
+      "Less $100 Trial",
+      "Qualified",
+      "Trial Completed",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "110826": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "110836": {
+    "pre_ae_stage": "MQL Qualified",
+    "is_trial": true,
+    "stages": [
+      "MQL Qualified",
+      "Less $100 Trial",
+      "In Trial",
+      "MQL Qualified"
+    ]
+  },
+  "110847": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110850": {
+    "pre_ae_stage": "Qualified",
+    "is_trial": true,
+    "stages": [
+      "Opportunity with Trial",
+      "Discovery",
+      "Qualified",
+      "Opportunity with Trial",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "110855": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "Qualified demo requests",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110868": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110869": {
+    "pre_ae_stage": "No Show",
+    "is_trial": false,
+    "stages": [
+      "No Show",
+      "Less $100 Discovery",
+      "Meeting Scheduled",
+      "No Show",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110872": {
+    "pre_ae_stage": "MQL Qualified",
+    "is_trial": true,
+    "stages": [
+      "MQL Qualified",
+      "Less $100 Trial",
+      "In Trial",
+      "MQL Qualified"
+    ]
+  },
+  "110880": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "110895": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110900": {
+    "pre_ae_stage": "Qualified",
+    "is_trial": true,
+    "stages": [
+      "Qualified",
+      "Less $100 Trial",
+      "In Trial",
+      "Qualified"
+    ]
+  },
+  "110902": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110921": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110927": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Meeting Scheduled",
+      "Qualified demo requests",
+      "In Trial",
+      "Meeting Scheduled"
+    ]
+  },
+  "110957": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110963": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Opportunity",
+      "Opportunity with Trial",
+      "Discovery",
+      "Opportunity",
+      "Less $100 Discovery",
+      "Discovery",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110969": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110977": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery"
+    ]
+  },
+  "110979": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Opportunity",
+      "Meeting Scheduled",
+      "Discovery"
+    ]
+  },
+  "110981": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Meeting Scheduled",
+      "Qualified demo requests",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Meeting Scheduled",
+      "Qualified demo requests"
+    ]
+  },
+  "110986": {
+    "pre_ae_stage": "No Show",
+    "is_trial": false,
+    "stages": [
+      "No Show",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "No Show",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110987": {
+    "pre_ae_stage": "Awaiting Feature",
+    "is_trial": false,
+    "stages": [
+      "Opportunity",
+      "Awaiting Feature",
+      "Opportunity with Trial",
+      "Opportunity",
+      "Opportunity",
+      "Opportunity with Trial",
+      "Discovery",
+      "Opportunity",
+      "Less $100 Discovery",
+      "Discovery",
+      "Less $100 Trial",
+      "Less $100 Discovery",
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "110988": {
+    "pre_ae_stage": "Expansion Potential",
+    "is_trial": false,
+    "stages": [
+      "Expansion Potential",
+      "Opportunity with Trial",
+      "Negotiation",
+      "Expansion Potential",
+      "Trial Completed",
+      "Negotiation",
+      "Opportunity with Trial",
+      "Trial Completed",
+      "Opportunity",
+      "Opportunity with Trial"
+    ]
+  },
+  "110989": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "110998": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "111006": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111015": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111018": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111035": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "111063": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "111071": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Negotiation",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111073": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "111082": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111089": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "111101": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111102": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Trial",
+      "Negotiation",
+      "Meeting Scheduled",
+      "Less $100 Trial"
+    ]
+  },
+  "111114": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Discovery"
+    ]
+  },
+  "111117": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "111125": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "111159": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Less $100 Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111167": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "111168": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Less $100 Trial",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111202": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "111204": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111212": {
+    "pre_ae_stage": "Trial Completed",
+    "is_trial": true,
+    "stages": [
+      "Opportunity with Trial",
+      "Trial Completed",
+      "Trial Completed",
+      "Opportunity with Trial",
+      "Opportunity with Trial",
+      "Trial Completed",
+      "Opportunity",
+      "Opportunity with Trial",
+      "Meeting Scheduled",
+      "Opportunity",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "111215": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Requested",
+      "Meeting Scheduled"
+    ]
+  },
+  "111219": {
+    "pre_ae_stage": "Qualified demo requests",
+    "is_trial": false,
+    "stages": [
+      "Qualified demo requests",
+      "Discovery",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111236": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": [
+      "Opportunity",
+      "Opportunity with Trial",
+      "Less $100 Discovery",
+      "Opportunity"
+    ]
+  },
+  "111243": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Discovery",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111244": {
+    "pre_ae_stage": "Meeting Scheduled",
+    "is_trial": false,
+    "stages": [
+      "Meeting Scheduled",
+      "Less $100 Trial",
+      "Qualified demo requests",
+      "Meeting Scheduled",
+      "Requested",
+      "Qualified demo requests"
+    ]
+  },
+  "111253": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": []
+  },
+  "111254": {
+    "pre_ae_stage": "",
+    "is_trial": null,
+    "stages": [
+      "Less $100 Discovery",
+      "Less $100 Trial"
+    ]
+  },
+  "111257": {
+    "pre_ae_stage": "MQL Qualified",
+    "is_trial": true,
+    "stages": [
+      "MQL Qualified",
+      "Discovery",
+      "In Trial",
+      "MQL Qualified"
+    ]
+  }
+}
