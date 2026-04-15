@@ -483,6 +483,127 @@ def fetch_pipedrive_data():
     return processed
 
 
+# ── High-Intent Pages Config ────────────────────────────────────────────────
+
+HIGH_INTENT_PAGES = [
+    # (path, category, type)
+    ("/blog/what-is-a-parallel-dialer/", "Dialer", "Blog Post"),
+    ("/blog/sales-engagement-platform-tools/", "SEP", "Blog Post"),
+    ("/blog/parallel-dialer-software/", "Dialer", "Blog Post"),
+    ("/feature/cadence-playbooks", "SEP", "Feature Page"),
+    ("/feature/agentic-cadences", "SEP", "Feature Page"),
+    ("/blog/how-many-cold-calls-to-make-per-day/", "Dialer", "Blog Post"),
+    ("/feature/multi-channel-outreach", "SEP", "Feature Page"),
+    ("/feature/account-research/", "SEP", "Feature Page"),
+    ("/compare/outreach", "SEP", "Compare Page"),
+    ("/dial-iq/feature/power-dialer", "Dialer", "Feature Page"),
+    ("/compare/salesloft", "SEP", "Compare Page"),
+    ("/blog/what-is-a-power-dialer/", "Dialer", "Blog Post"),
+    ("/blog/power-dialer-software-tools/", "Dialer", "Blog Post"),
+    ("/email-sequence-software-tools/", "SEP", "Landing Page"),
+    ("/feature/account-based-selling", "SEP", "Feature Page"),
+    ("/feature/agentic-cadences/", "SEP", "Feature Page"),
+    ("/feature/account-research", "SEP", "Feature Page"),
+    ("/dial-iq/feature/voicemail-drop", "Dialer", "Feature Page"),
+    ("/feature/click-to-call-dialer", "Dialer", "Feature Page"),
+    ("/blog/cold-calling-software/", "Dialer", "Blog Post"),
+    ("/feature/india-dialer", "Dialer", "Feature Page"),
+    ("/feature/india-dialer/", "Dialer", "Feature Page"),
+    ("/feature/sales-dialer", "Dialer", "Feature Page"),
+    ("/feature/click-to-call-dialer/", "Dialer", "Feature Page"),
+    ("/dial-iq/feature/voicemail-detection", "Dialer", "Feature Page"),
+    ("/", "SEP", "Homepage"),
+    ("/sales-engagement-platform/pricing", "SEP", "Pricing"),
+    ("/sales-engagement-platform/pricing/", "SEP", "Pricing"),
+    ("/dial-iq/pricing/", "Dialer", "Pricing"),
+    ("/dial-iq/pricing", "Dialer", "Pricing"),
+    ("/dial-iq/", "Dialer", "Feature Page"),
+    ("/dial-iq", "Dialer", "Feature Page"),
+    ("/dial-iq/feature/parallel-dialer", "Dialer", "Feature Page"),
+    ("/dial-iq/feature/parallel-dialer/", "Dialer", "Feature Page"),
+]
+
+# Deduplicate — keep first occurrence of each path (strip trailing slash for matching)
+_seen_pages = set()
+HIGH_INTENT_PAGES_DEDUP = []
+for path, cat, ptype in HIGH_INTENT_PAGES:
+    norm = path.rstrip("/") if path != "/" else path
+    if norm not in _seen_pages:
+        _seen_pages.add(norm)
+        HIGH_INTENT_PAGES_DEDUP.append((path, cat, ptype))
+
+HIGH_INTENT_PAGE_SET = {p.rstrip("/") if p != "/" else p for p, _, _ in HIGH_INTENT_PAGES}
+
+
+def fetch_ga4_page_data(start_str, end_str):
+    """Fetch page-level GA4 data for high-intent pages."""
+    from google.analytics.data_v1beta import BetaAnalyticsDataClient
+    from google.analytics.data_v1beta.types import (
+        RunReportRequest, DateRange, Dimension, Metric,
+    )
+
+    if "ga4_credentials" in st.secrets:
+        from google.oauth2 import service_account
+        creds_info = dict(st.secrets["ga4_credentials"])
+        credentials = service_account.Credentials.from_service_account_info(creds_info)
+        client = BetaAnalyticsDataClient(credentials=credentials)
+    else:
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = GA4_CREDS_FILE
+        client = BetaAnalyticsDataClient()
+
+    dr = [DateRange(start_date=start_str, end_date=end_str)]
+
+    # Page-level: users, sessions, bounce rate, avg engagement time, demo clicks, signup clicks
+    r = client.run_report(RunReportRequest(
+        property=GA4_PROPERTY_ID, date_ranges=dr,
+        dimensions=[Dimension(name="pagePath")],
+        metrics=[
+            Metric(name="totalUsers"),
+            Metric(name="sessions"),
+            Metric(name="bounceRate"),
+            Metric(name="averageSessionDuration"),
+            Metric(name="keyEvents:demo_button_clicks"),
+            Metric(name="keyEvents:signup_button_clicks"),
+        ],
+        limit=50000,
+    ))
+
+    rows = []
+    for row in r.rows:
+        path = row.dimension_values[0].value
+        norm = path.rstrip("/") if path != "/" else path
+        if norm in HIGH_INTENT_PAGE_SET:
+            rows.append({
+                "page": path,
+                "page_norm": norm,
+                "users": int(row.metric_values[0].value),
+                "sessions": int(row.metric_values[1].value),
+                "bounce_rate": float(row.metric_values[2].value),
+                "avg_engagement": float(row.metric_values[3].value),
+                "demo_clicks": int(row.metric_values[4].value),
+                "signup_clicks": int(row.metric_values[5].value),
+            })
+
+    # Merge rows with same normalized path (e.g. /pricing and /pricing/)
+    merged = {}
+    for row in rows:
+        norm = row["page_norm"]
+        if norm in merged:
+            m = merged[norm]
+            total_sessions = m["sessions"] + row["sessions"]
+            if total_sessions > 0:
+                m["bounce_rate"] = (m["bounce_rate"] * m["sessions"] + row["bounce_rate"] * row["sessions"]) / total_sessions
+                m["avg_engagement"] = (m["avg_engagement"] * m["sessions"] + row["avg_engagement"] * row["sessions"]) / total_sessions
+            m["users"] += row["users"]
+            m["sessions"] += row["sessions"]
+            m["demo_clicks"] += row["demo_clicks"]
+            m["signup_clicks"] += row["signup_clicks"]
+        else:
+            merged[norm] = dict(row)
+
+    return list(merged.values())
+
+
 # ── LinkedIn Helper ─────────────────────────────────────────────────────────
 
 def is_linkedin_source(source, medium):
@@ -923,6 +1044,145 @@ def render_tab(weeks, weekly, chart_weeks, chart_data, title, cols=None, caption
     st.markdown(table_html, unsafe_allow_html=True)
 
 
+# ── Page Performance Tab ────────────────────────────────────────────────────
+
+def render_page_performance_tab(ga4_data):
+    """Render the high-intent page tracking tab with date range picker."""
+    st.markdown("### 📄 High-Intent Page Performance")
+    st.caption("Track demo clicks, signup clicks, and engagement on key pages. Excl. Chennai/TN in site-wide clicks.")
+
+    col1, col2, col3 = st.columns([2, 2, 2])
+    with col1:
+        current_start = st.date_input("Current period start", value=date(2026, 4, 1), min_value=DATA_START, key="page_curr_start")
+    with col2:
+        current_end = st.date_input("Current period end", value=date.today() - timedelta(days=1), min_value=DATA_START, key="page_curr_end")
+    with col3:
+        # Auto-calculate comparison period of same length
+        period_days = (current_end - current_start).days
+        compare_start = current_start - timedelta(days=period_days + 1)
+        compare_end = current_start - timedelta(days=1)
+        st.markdown(f"**Comparing vs:** {compare_start.strftime('%b %d')} - {compare_end.strftime('%b %d')}")
+
+    if st.button("📊 Load Page Data", type="primary", key="load_pages"):
+        with st.spinner("Fetching current period..."):
+            curr_data = fetch_ga4_page_data(current_start.strftime("%Y-%m-%d"), current_end.strftime("%Y-%m-%d"))
+            st.session_state["page_curr"] = curr_data
+        with st.spinner("Fetching comparison period..."):
+            prev_data = fetch_ga4_page_data(compare_start.strftime("%Y-%m-%d"), compare_end.strftime("%Y-%m-%d"))
+            st.session_state["page_prev"] = prev_data
+        st.session_state["page_periods"] = {
+            "curr_label": f"{current_start.strftime('%b %d')} - {current_end.strftime('%b %d')}",
+            "prev_label": f"{compare_start.strftime('%b %d')} - {compare_end.strftime('%b %d')}",
+        }
+        st.rerun()
+
+    if "page_curr" not in st.session_state:
+        st.info("Select a date range and click **Load Page Data**.")
+        return
+
+    curr_data = st.session_state["page_curr"]
+    prev_data = st.session_state["page_prev"]
+    periods = st.session_state.get("page_periods", {})
+
+    # Build lookup by normalized path
+    curr_map = {r["page_norm"]: r for r in curr_data}
+    prev_map = {r["page_norm"]: r for r in prev_data}
+
+    # Build page info lookup
+    page_info = {}
+    for path, cat, ptype in HIGH_INTENT_PAGES_DEDUP:
+        norm = path.rstrip("/") if path != "/" else path
+        page_info[norm] = {"category": cat, "type": ptype, "display_path": path}
+
+    # Build table
+    PAGE_METRICS = [
+        ("users", "Users", "int"),
+        ("sessions", "Sessions", "int"),
+        ("bounce_rate", "Bounce Rate", "pct"),
+        ("avg_engagement", "Avg Engage", "time"),
+        ("demo_clicks", "Demo Clicks", "int"),
+        ("demo_rate", "Demo Rate", "pct"),
+        ("signup_clicks", "Signup Clicks", "int"),
+        ("signup_rate", "Signup Rate", "pct"),
+    ]
+
+    th = 'style="background:#4472C4;color:white;padding:8px 10px;text-align:center;font-size:11px;font-weight:600;border:1px solid #3a62a8;white-space:nowrap;position:sticky;top:0;z-index:10;"'
+    td = 'style="padding:6px 8px;border:1px solid #D9E2F3;text-align:center;font-size:11px;vertical-align:top;"'
+    td_page = 'style="padding:6px 8px;border:1px solid #D9E2F3;text-align:left;font-size:11px;font-weight:500;white-space:nowrap;max-width:300px;overflow:hidden;text-overflow:ellipsis;"'
+    td_cat = 'style="padding:6px 8px;border:1px solid #D9E2F3;text-align:center;font-size:10px;"'
+
+    html = f'<div style="overflow-x:auto;max-height:75vh;"><table style="border-collapse:collapse;width:100%;font-family:sans-serif;">'
+    html += f'<thead><tr>'
+    html += f'<th {th}>Page Path</th><th {th}>Category</th><th {th}>Type</th>'
+    for _, label, _ in PAGE_METRICS:
+        html += f'<th {th}>{label}</th>'
+    html += '</tr></thead><tbody>'
+
+    # Sort pages by current users descending
+    all_norms = list(page_info.keys())
+    all_norms.sort(key=lambda n: curr_map.get(n, {}).get("users", 0), reverse=True)
+
+    for norm in all_norms:
+        info = page_info[norm]
+        curr = curr_map.get(norm, {"users": 0, "sessions": 0, "bounce_rate": 0, "avg_engagement": 0, "demo_clicks": 0, "signup_clicks": 0})
+        prev = prev_map.get(norm, {"users": 0, "sessions": 0, "bounce_rate": 0, "avg_engagement": 0, "demo_clicks": 0, "signup_clicks": 0})
+
+        # Compute derived metrics
+        curr["demo_rate"] = (curr["demo_clicks"] / curr["sessions"] * 100) if curr["sessions"] > 0 else 0
+        curr["signup_rate"] = (curr["signup_clicks"] / curr["sessions"] * 100) if curr["sessions"] > 0 else 0
+        prev["demo_rate"] = (prev["demo_clicks"] / prev["sessions"] * 100) if prev["sessions"] > 0 else 0
+        prev["signup_rate"] = (prev["signup_clicks"] / prev["sessions"] * 100) if prev["sessions"] > 0 else 0
+
+        # Category color
+        cat_bg = "#E8F0FE" if info["category"] == "SEP" else "#FFF3E0"
+
+        html += '<tr>'
+        html += f'<td {td_page} title="{info["display_path"]}">{info["display_path"]}</td>'
+        html += f'<td {td_cat} style="padding:6px 8px;border:1px solid #D9E2F3;text-align:center;font-size:10px;background:{cat_bg};">{info["category"]}</td>'
+        html += f'<td {td_cat}>{info["type"]}</td>'
+
+        for key, _, fmt in PAGE_METRICS:
+            cv = curr.get(key, 0)
+            pv = prev.get(key, 0)
+
+            # Format value
+            if fmt == "int":
+                val_str = f"{int(cv):,}"
+            elif fmt == "pct":
+                val_str = f"{cv:.1f}%"
+            elif fmt == "time":
+                mins = int(cv) // 60
+                secs = int(cv) % 60
+                val_str = f"{mins}m {secs}s" if mins > 0 else f"{secs}s"
+
+            # Compute change arrow
+            arrow = ""
+            if isinstance(pv, (int, float)) and isinstance(cv, (int, float)):
+                if pv > 0:
+                    pct_change = ((cv - pv) / pv) * 100
+                    if key == "bounce_rate":  # Lower is better
+                        if pct_change < -1:
+                            arrow = f'<div style="color:#2E7D32;font-size:9px;">▲ {abs(pct_change):.0f}%</div>'
+                        elif pct_change > 1:
+                            arrow = f'<div style="color:#DC2626;font-size:9px;">▼ {abs(pct_change):.0f}%</div>'
+                    else:  # Higher is better
+                        if pct_change > 1:
+                            arrow = f'<div style="color:#2E7D32;font-size:9px;">▲ {pct_change:.0f}%</div>'
+                        elif pct_change < -1:
+                            arrow = f'<div style="color:#DC2626;font-size:9px;">▼ {abs(pct_change):.0f}%</div>'
+                elif cv > 0:
+                    arrow = f'<div style="color:#2E7D32;font-size:9px;">NEW</div>'
+
+            html += f'<td {td}><div style="font-weight:600;">{val_str}</div>{arrow}</td>'
+
+        html += '</tr>'
+
+    html += '</tbody></table></div>'
+
+    st.caption(f"**Current:** {periods.get('curr_label', '')} | **vs:** {periods.get('prev_label', '')}")
+    st.markdown(html, unsafe_allow_html=True)
+
+
 # ── Main App ────────────────────────────────────────────────────────────────
 
 def main():
@@ -972,8 +1232,8 @@ def main():
     chart_weeks = compute_standard_weeks(DATA_START, end_date)
 
     # ── Tabs ────────────────────────────────────────────────────────────────
-    tab_overall, tab_northam, tab_euk, tab_amea, tab_latam = st.tabs([
-        "📊 Overall", "🇺🇸 NORTHAM", "🇪🇺 EUK", "🌏 AMEA", "🌎 LATAM",
+    tab_overall, tab_northam, tab_euk, tab_amea, tab_latam, tab_pages = st.tabs([
+        "📊 Overall", "🇺🇸 NORTHAM", "🇪🇺 EUK", "🌏 AMEA", "🌎 LATAM", "📄 Page Performance",
     ])
 
     with tab_overall:
@@ -1000,6 +1260,10 @@ def main():
                 title=f"{region_label} — Traffic & Leads",
                 cols=REGION_TABLE_COLS,
             )
+
+
+    with tab_pages:
+        render_page_performance_tab(ga4_data)
 
 
 if __name__ == "__main__":
