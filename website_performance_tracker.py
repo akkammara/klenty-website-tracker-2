@@ -521,6 +521,14 @@ HIGH_INTENT_PAGES = [
     ("/dial-iq", "Dialer", "Feature Page"),
     ("/dial-iq/feature/parallel-dialer", "Dialer", "Feature Page"),
     ("/dial-iq/feature/parallel-dialer/", "Dialer", "Feature Page"),
+    # New pages
+    ("/blog/nooks-alternatives/", "Dialer", "Blog Post"),
+    ("/blog/orum-alternatives/", "Dialer", "Blog Post"),
+    ("/dial-iq/feature/connect-ai/", "Dialer", "Feature Page"),
+    ("/blog/connect-ai/", "Dialer", "Blog Post"),
+    ("/dial-iq/feature/ai-call-coaching/", "Dialer", "Feature Page"),
+    ("/dial-iq/feature/ai-call-coaching-suite/", "Dialer", "Feature Page"),
+    ("/blog/introducing-ai-call-coaching-suite/", "Dialer", "Blog Post"),
 ]
 
 # Deduplicate — keep first occurrence of each path (strip trailing slash for matching)
@@ -535,56 +543,23 @@ for path, cat, ptype in HIGH_INTENT_PAGES:
 HIGH_INTENT_PAGE_SET = {p.rstrip("/") if p != "/" else p for p, _, _ in HIGH_INTENT_PAGES}
 
 
-def fetch_ga4_page_data(start_str, end_str):
-    """Fetch page-level GA4 data for high-intent pages."""
+def _get_ga4_client():
+    """Get GA4 client (reusable helper)."""
     from google.analytics.data_v1beta import BetaAnalyticsDataClient
-    from google.analytics.data_v1beta.types import (
-        RunReportRequest, DateRange, Dimension, Metric,
-    )
+    try:
+        if "ga4_credentials" in st.secrets:
+            from google.oauth2 import service_account
+            creds_info = dict(st.secrets["ga4_credentials"])
+            credentials = service_account.Credentials.from_service_account_info(creds_info)
+            return BetaAnalyticsDataClient(credentials=credentials)
+    except Exception:
+        pass
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = GA4_CREDS_FILE
+    return BetaAnalyticsDataClient()
 
-    if "ga4_credentials" in st.secrets:
-        from google.oauth2 import service_account
-        creds_info = dict(st.secrets["ga4_credentials"])
-        credentials = service_account.Credentials.from_service_account_info(creds_info)
-        client = BetaAnalyticsDataClient(credentials=credentials)
-    else:
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = GA4_CREDS_FILE
-        client = BetaAnalyticsDataClient()
 
-    dr = [DateRange(start_date=start_str, end_date=end_str)]
-
-    # Page-level: users, sessions, bounce rate, avg engagement time, demo clicks, signup clicks
-    r = client.run_report(RunReportRequest(
-        property=GA4_PROPERTY_ID, date_ranges=dr,
-        dimensions=[Dimension(name="pagePath")],
-        metrics=[
-            Metric(name="totalUsers"),
-            Metric(name="sessions"),
-            Metric(name="bounceRate"),
-            Metric(name="averageSessionDuration"),
-            Metric(name="keyEvents:demo_button_clicks"),
-            Metric(name="keyEvents:signup_button_clicks"),
-        ],
-        limit=50000,
-    ))
-
-    rows = []
-    for row in r.rows:
-        path = row.dimension_values[0].value
-        norm = path.rstrip("/") if path != "/" else path
-        if norm in HIGH_INTENT_PAGE_SET:
-            rows.append({
-                "page": path,
-                "page_norm": norm,
-                "users": int(row.metric_values[0].value),
-                "sessions": int(row.metric_values[1].value),
-                "bounce_rate": float(row.metric_values[2].value),
-                "avg_engagement": float(row.metric_values[3].value),
-                "demo_clicks": int(row.metric_values[4].value),
-                "signup_clicks": int(row.metric_values[5].value),
-            })
-
-    # Merge rows with same normalized path (e.g. /pricing and /pricing/)
+def _merge_page_rows(rows):
+    """Merge rows with same normalized path (e.g. /pricing and /pricing/)."""
     merged = {}
     for row in rows:
         norm = row["page_norm"]
@@ -597,11 +572,115 @@ def fetch_ga4_page_data(start_str, end_str):
             m["users"] += row["users"]
             m["sessions"] += row["sessions"]
             m["demo_clicks"] += row["demo_clicks"]
+            m["demo_completions"] += row["demo_completions"]
             m["signup_clicks"] += row["signup_clicks"]
+            m["signup_completions"] += row["signup_completions"]
         else:
             merged[norm] = dict(row)
-
     return list(merged.values())
+
+
+def fetch_ga4_page_data(start_str, end_str):
+    """Fetch page-level GA4 data for high-intent pages (overall)."""
+    from google.analytics.data_v1beta.types import (
+        RunReportRequest, DateRange, Dimension, Metric,
+    )
+    client = _get_ga4_client()
+    dr = [DateRange(start_date=start_str, end_date=end_str)]
+
+    r = client.run_report(RunReportRequest(
+        property=GA4_PROPERTY_ID, date_ranges=dr,
+        dimensions=[Dimension(name="pagePath")],
+        metrics=[
+            Metric(name="totalUsers"),
+            Metric(name="sessions"),
+            Metric(name="bounceRate"),
+            Metric(name="averageSessionDuration"),
+            Metric(name="keyEvents:demo_button_clicks"),
+            Metric(name="keyEvents:demo_form"),
+            Metric(name="keyEvents:signup_button_clicks"),
+            Metric(name="keyEvents:signup_success_new"),
+        ],
+        limit=50000,
+    ))
+
+    rows = []
+    for row in r.rows:
+        path = row.dimension_values[0].value
+        norm = path.rstrip("/") if path != "/" else path
+        if norm in HIGH_INTENT_PAGE_SET:
+            rows.append({
+                "page": path, "page_norm": norm,
+                "users": int(row.metric_values[0].value),
+                "sessions": int(row.metric_values[1].value),
+                "bounce_rate": float(row.metric_values[2].value),
+                "avg_engagement": float(row.metric_values[3].value),
+                "demo_clicks": int(row.metric_values[4].value),
+                "demo_completions": int(row.metric_values[5].value),
+                "signup_clicks": int(row.metric_values[6].value),
+                "signup_completions": int(row.metric_values[7].value),
+            })
+
+    return _merge_page_rows(rows)
+
+
+def fetch_ga4_page_data_by_country(start_str, end_str):
+    """Fetch page-level GA4 data with country dimension for regional breakdown."""
+    from google.analytics.data_v1beta.types import (
+        RunReportRequest, DateRange, Dimension, Metric,
+    )
+    client = _get_ga4_client()
+    dr = [DateRange(start_date=start_str, end_date=end_str)]
+
+    r = client.run_report(RunReportRequest(
+        property=GA4_PROPERTY_ID, date_ranges=dr,
+        dimensions=[Dimension(name="pagePath"), Dimension(name="country")],
+        metrics=[
+            Metric(name="totalUsers"),
+            Metric(name="sessions"),
+            Metric(name="bounceRate"),
+            Metric(name="averageSessionDuration"),
+            Metric(name="keyEvents:demo_button_clicks"),
+            Metric(name="keyEvents:demo_form"),
+            Metric(name="keyEvents:signup_button_clicks"),
+            Metric(name="keyEvents:signup_success_new"),
+        ],
+        limit=100000,
+    ))
+
+    rows = []
+    for row in r.rows:
+        path = row.dimension_values[0].value
+        country = row.dimension_values[1].value
+        norm = path.rstrip("/") if path != "/" else path
+        if norm in HIGH_INTENT_PAGE_SET:
+            rows.append({
+                "page": path, "page_norm": norm, "country": country,
+                "users": int(row.metric_values[0].value),
+                "sessions": int(row.metric_values[1].value),
+                "bounce_rate": float(row.metric_values[2].value),
+                "avg_engagement": float(row.metric_values[3].value),
+                "demo_clicks": int(row.metric_values[4].value),
+                "demo_completions": int(row.metric_values[5].value),
+                "signup_clicks": int(row.metric_values[6].value),
+                "signup_completions": int(row.metric_values[7].value),
+            })
+    return rows
+
+
+def filter_page_data_by_region(rows, region_name):
+    """Filter page-level country rows to a specific region, then merge by page."""
+    if region_name == "NORTHAM":
+        match = lambda c: c in NORTHAM_COUNTRIES
+    elif region_name == "EUK":
+        match = lambda c: c in EUK_COUNTRIES
+    elif region_name == "AMEA":
+        match = lambda c: c in AMEA_COUNTRIES and c not in EXCLUDED_COUNTRIES
+    else:  # LATAM
+        match = lambda c: c not in NORTHAM_COUNTRIES and c not in EUK_COUNTRIES and c not in AMEA_COUNTRIES and c not in EXCLUDED_COUNTRIES
+
+    filtered = [r for r in rows if match(r.get("country", ""))]
+    return _merge_page_rows(filtered)
 
 
 # ── LinkedIn Helper ─────────────────────────────────────────────────────────
@@ -1046,63 +1125,24 @@ def render_tab(weeks, weekly, chart_weeks, chart_data, title, cols=None, caption
 
 # ── Page Performance Tab ────────────────────────────────────────────────────
 
-def render_page_performance_tab(ga4_data):
-    """Render the high-intent page tracking tab with date range picker."""
-    st.markdown("### 📄 High-Intent Page Performance")
-    st.caption("Track demo clicks, signup clicks, and engagement on key pages. Excl. Chennai/TN in site-wide clicks.")
-
-    col1, col2, col3 = st.columns([2, 2, 2])
-    with col1:
-        current_start = st.date_input("Current period start", value=date(2026, 4, 1), min_value=DATA_START, key="page_curr_start")
-    with col2:
-        current_end = st.date_input("Current period end", value=date.today() - timedelta(days=1), min_value=DATA_START, key="page_curr_end")
-    with col3:
-        # Auto-calculate comparison period of same length
-        period_days = (current_end - current_start).days
-        compare_start = current_start - timedelta(days=period_days + 1)
-        compare_end = current_start - timedelta(days=1)
-        st.markdown(f"**Comparing vs:** {compare_start.strftime('%b %d')} - {compare_end.strftime('%b %d')}")
-
-    if st.button("📊 Load Page Data", type="primary", key="load_pages"):
-        with st.spinner("Fetching current period..."):
-            curr_data = fetch_ga4_page_data(current_start.strftime("%Y-%m-%d"), current_end.strftime("%Y-%m-%d"))
-            st.session_state["page_curr"] = curr_data
-        with st.spinner("Fetching comparison period..."):
-            prev_data = fetch_ga4_page_data(compare_start.strftime("%Y-%m-%d"), compare_end.strftime("%Y-%m-%d"))
-            st.session_state["page_prev"] = prev_data
-        st.session_state["page_periods"] = {
-            "curr_label": f"{current_start.strftime('%b %d')} - {current_end.strftime('%b %d')}",
-            "prev_label": f"{compare_start.strftime('%b %d')} - {compare_end.strftime('%b %d')}",
-        }
-        st.rerun()
-
-    if "page_curr" not in st.session_state:
-        st.info("Select a date range and click **Load Page Data**.")
-        return
-
-    curr_data = st.session_state["page_curr"]
-    prev_data = st.session_state["page_prev"]
-    periods = st.session_state.get("page_periods", {})
-
-    # Build lookup by normalized path
+def _build_page_table_html(curr_data, prev_data, page_info):
+    """Build HTML table for page performance data."""
     curr_map = {r["page_norm"]: r for r in curr_data}
     prev_map = {r["page_norm"]: r for r in prev_data}
 
-    # Build page info lookup
-    page_info = {}
-    for path, cat, ptype in HIGH_INTENT_PAGES_DEDUP:
-        norm = path.rstrip("/") if path != "/" else path
-        page_info[norm] = {"category": cat, "type": ptype, "display_path": path}
+    EMPTY_ROW = {"users": 0, "sessions": 0, "bounce_rate": 0, "avg_engagement": 0,
+                 "demo_clicks": 0, "demo_completions": 0, "signup_clicks": 0, "signup_completions": 0}
 
-    # Build table
     PAGE_METRICS = [
         ("users", "Users", "int"),
         ("sessions", "Sessions", "int"),
         ("bounce_rate", "Bounce Rate", "pct"),
         ("avg_engagement", "Avg Engage", "time"),
         ("demo_clicks", "Demo Clicks", "int"),
+        ("demo_completions", "Demo Comp.", "int"),
         ("demo_rate", "Demo Rate", "pct"),
         ("signup_clicks", "Signup Clicks", "int"),
+        ("signup_completions", "Signup Comp.", "int"),
         ("signup_rate", "Signup Rate", "pct"),
     ]
 
@@ -1111,29 +1151,27 @@ def render_page_performance_tab(ga4_data):
     td_page = 'style="padding:6px 8px;border:1px solid #D9E2F3;text-align:left;font-size:11px;font-weight:500;white-space:nowrap;max-width:300px;overflow:hidden;text-overflow:ellipsis;"'
     td_cat = 'style="padding:6px 8px;border:1px solid #D9E2F3;text-align:center;font-size:10px;"'
 
-    html = f'<div style="overflow-x:auto;max-height:75vh;"><table style="border-collapse:collapse;width:100%;font-family:sans-serif;">'
-    html += f'<thead><tr>'
+    html = '<div style="overflow-x:auto;max-height:75vh;"><table style="border-collapse:collapse;width:100%;font-family:sans-serif;">'
+    html += '<thead><tr>'
     html += f'<th {th}>Page Path</th><th {th}>Category</th><th {th}>Type</th>'
     for _, label, _ in PAGE_METRICS:
         html += f'<th {th}>{label}</th>'
     html += '</tr></thead><tbody>'
 
-    # Sort pages by current users descending
     all_norms = list(page_info.keys())
     all_norms.sort(key=lambda n: curr_map.get(n, {}).get("users", 0), reverse=True)
 
     for norm in all_norms:
         info = page_info[norm]
-        curr = curr_map.get(norm, {"users": 0, "sessions": 0, "bounce_rate": 0, "avg_engagement": 0, "demo_clicks": 0, "signup_clicks": 0})
-        prev = prev_map.get(norm, {"users": 0, "sessions": 0, "bounce_rate": 0, "avg_engagement": 0, "demo_clicks": 0, "signup_clicks": 0})
+        curr = {**EMPTY_ROW, **curr_map.get(norm, {})}
+        prev = {**EMPTY_ROW, **prev_map.get(norm, {})}
 
-        # Compute derived metrics
-        curr["demo_rate"] = (curr["demo_clicks"] / curr["sessions"] * 100) if curr["sessions"] > 0 else 0
-        curr["signup_rate"] = (curr["signup_clicks"] / curr["sessions"] * 100) if curr["sessions"] > 0 else 0
-        prev["demo_rate"] = (prev["demo_clicks"] / prev["sessions"] * 100) if prev["sessions"] > 0 else 0
-        prev["signup_rate"] = (prev["signup_clicks"] / prev["sessions"] * 100) if prev["sessions"] > 0 else 0
+        # Demo rate = completions / sessions, Signup rate = completions / sessions
+        curr["demo_rate"] = (curr["demo_completions"] / curr["sessions"] * 100) if curr["sessions"] > 0 else 0
+        curr["signup_rate"] = (curr["signup_completions"] / curr["sessions"] * 100) if curr["sessions"] > 0 else 0
+        prev["demo_rate"] = (prev["demo_completions"] / prev["sessions"] * 100) if prev["sessions"] > 0 else 0
+        prev["signup_rate"] = (prev["signup_completions"] / prev["sessions"] * 100) if prev["sessions"] > 0 else 0
 
-        # Category color
         cat_bg = "#E8F0FE" if info["category"] == "SEP" else "#FFF3E0"
 
         html += '<tr>'
@@ -1145,7 +1183,6 @@ def render_page_performance_tab(ga4_data):
             cv = curr.get(key, 0)
             pv = prev.get(key, 0)
 
-            # Format value
             if fmt == "int":
                 val_str = f"{int(cv):,}"
             elif fmt == "pct":
@@ -1155,17 +1192,16 @@ def render_page_performance_tab(ga4_data):
                 secs = int(cv) % 60
                 val_str = f"{mins}m {secs}s" if mins > 0 else f"{secs}s"
 
-            # Compute change arrow
             arrow = ""
             if isinstance(pv, (int, float)) and isinstance(cv, (int, float)):
                 if pv > 0:
                     pct_change = ((cv - pv) / pv) * 100
-                    if key == "bounce_rate":  # Lower is better
+                    if key == "bounce_rate":
                         if pct_change < -1:
                             arrow = f'<div style="color:#2E7D32;font-size:9px;">▲ {abs(pct_change):.0f}%</div>'
                         elif pct_change > 1:
                             arrow = f'<div style="color:#DC2626;font-size:9px;">▼ {abs(pct_change):.0f}%</div>'
-                    else:  # Higher is better
+                    else:
                         if pct_change > 1:
                             arrow = f'<div style="color:#2E7D32;font-size:9px;">▲ {pct_change:.0f}%</div>'
                         elif pct_change < -1:
@@ -1174,13 +1210,78 @@ def render_page_performance_tab(ga4_data):
                     arrow = f'<div style="color:#2E7D32;font-size:9px;">NEW</div>'
 
             html += f'<td {td}><div style="font-weight:600;">{val_str}</div>{arrow}</td>'
-
         html += '</tr>'
 
     html += '</tbody></table></div>'
+    return html
 
+
+def render_page_performance_tab(ga4_data):
+    """Render the high-intent page tracking tab with date range picker and regional sub-tabs."""
+    st.markdown("### 📄 High-Intent Page Performance")
+    st.caption("Track demo/signup clicks & completions on key pages | Demo Rate & Signup Rate based on completions")
+
+    col1, col2, col3 = st.columns([2, 2, 2])
+    with col1:
+        current_start = st.date_input("Current period start", value=date(2026, 4, 1), min_value=DATA_START, key="page_curr_start")
+    with col2:
+        current_end = st.date_input("Current period end", value=date.today() - timedelta(days=1), min_value=DATA_START, key="page_curr_end")
+    with col3:
+        period_days = (current_end - current_start).days
+        compare_start = current_start - timedelta(days=period_days + 1)
+        compare_end = current_start - timedelta(days=1)
+        st.markdown(f"**Comparing vs:** {compare_start.strftime('%b %d')} - {compare_end.strftime('%b %d')}")
+
+    if st.button("📊 Load Page Data", type="primary", key="load_pages"):
+        with st.spinner("Fetching current period (overall + by country)..."):
+            curr_overall = fetch_ga4_page_data(current_start.strftime("%Y-%m-%d"), current_end.strftime("%Y-%m-%d"))
+            curr_by_country = fetch_ga4_page_data_by_country(current_start.strftime("%Y-%m-%d"), current_end.strftime("%Y-%m-%d"))
+            st.session_state["page_curr"] = curr_overall
+            st.session_state["page_curr_country"] = curr_by_country
+        with st.spinner("Fetching comparison period (overall + by country)..."):
+            prev_overall = fetch_ga4_page_data(compare_start.strftime("%Y-%m-%d"), compare_end.strftime("%Y-%m-%d"))
+            prev_by_country = fetch_ga4_page_data_by_country(compare_start.strftime("%Y-%m-%d"), compare_end.strftime("%Y-%m-%d"))
+            st.session_state["page_prev"] = prev_overall
+            st.session_state["page_prev_country"] = prev_by_country
+        st.session_state["page_periods"] = {
+            "curr_label": f"{current_start.strftime('%b %d')} - {current_end.strftime('%b %d')}",
+            "prev_label": f"{compare_start.strftime('%b %d')} - {compare_end.strftime('%b %d')}",
+        }
+        st.rerun()
+
+    if "page_curr" not in st.session_state:
+        st.info("Select a date range and click **Load Page Data**.")
+        return
+
+    periods = st.session_state.get("page_periods", {})
     st.caption(f"**Current:** {periods.get('curr_label', '')} | **vs:** {periods.get('prev_label', '')}")
-    st.markdown(html, unsafe_allow_html=True)
+
+    # Build page info lookup
+    page_info = {}
+    for path, cat, ptype in HIGH_INTENT_PAGES_DEDUP:
+        norm = path.rstrip("/") if path != "/" else path
+        page_info[norm] = {"category": cat, "type": ptype, "display_path": path}
+
+    # Sub-tabs for regions
+    ptab_all, ptab_northam, ptab_euk, ptab_amea, ptab_latam = st.tabs([
+        "🌐 All", "🇺🇸 NORTHAM", "🇪🇺 EUK", "🌏 AMEA", "🌎 LATAM",
+    ])
+
+    with ptab_all:
+        html = _build_page_table_html(st.session_state["page_curr"], st.session_state["page_prev"], page_info)
+        st.markdown(html, unsafe_allow_html=True)
+
+    for ptab, region_name in [
+        (ptab_northam, "NORTHAM"),
+        (ptab_euk, "EUK"),
+        (ptab_amea, "AMEA"),
+        (ptab_latam, "LATAM"),
+    ]:
+        with ptab:
+            curr_region = filter_page_data_by_region(st.session_state["page_curr_country"], region_name)
+            prev_region = filter_page_data_by_region(st.session_state["page_prev_country"], region_name)
+            html = _build_page_table_html(curr_region, prev_region, page_info)
+            st.markdown(html, unsafe_allow_html=True)
 
 
 # ── Main App ────────────────────────────────────────────────────────────────
