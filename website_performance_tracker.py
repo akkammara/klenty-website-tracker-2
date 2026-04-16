@@ -79,7 +79,7 @@ EUK_COUNTRIES = {
     "San Marino", "Vatican City", "Czechia",
 }
 AMEA_COUNTRIES = {
-    "India", "Australia", "Singapore", "New Zealand",
+    "India", "Australia", "New Zealand",
     "United Arab Emirates", "Saudi Arabia", "Qatar", "Bahrain", "Kuwait",
     "Oman", "Israel", "Japan", "South Korea", "Hong Kong", "Taiwan",
     "Thailand", "Malaysia", "Indonesia", "Philippines", "Vietnam",
@@ -89,7 +89,7 @@ AMEA_COUNTRIES = {
 }
 
 # Countries to exclude globally (bot traffic)
-EXCLUDED_COUNTRIES = {"China"}
+EXCLUDED_COUNTRIES = {"China", "Singapore"}
 
 REGION_COLORS = {
     "NORTHAM": "#4472C4",
